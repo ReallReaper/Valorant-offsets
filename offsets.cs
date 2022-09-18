@@ -1,13 +1,12 @@
 namespace offsets {
 	// global
-	uint64_t uworld_key = 0x8E784B8; 
-	uint64_t uworld_state = 0x8E78480;
-	uint64_t g_object_state = 0x8CE6800;
-	uint64_t g_object_key = 0x8CE6838;
-	uint64_t line_of_sight = 0x495E1D0;
-	uint64_t bone_matrix = 0x49242E0;
-	
-	uint64_t pakman_offset = 0x1B6CCA0;                     // deref_pointer_in_game_space_fn - https://www.unknowncheats.me/forum/valorant/503616-dumping-valorant-perfect-results-easy.html
+	uint64_t uworld_key = 0x8F24238; 
+	uint64_t uworld_state = 0x8F24200;
+	uint64_t g_object_state = 0x8D92580;
+	uint64_t g_object_key = 0x8D925B8;
+	uint64_t line_of_sight = 0x4977040;
+	uint64_t bone_matrix = 0x493D160;
+	uint64_t pakman_offset = 0x1B84120;                 
 	
 	// world
 	uint64_t persistent_level = 0x38;			// world > persistent_level
@@ -50,6 +49,30 @@ namespace offsets {
 	// mesh
 	uint64_t mesh = 0x430;					// world > persistent_level > aactor > mesh
 	uint64_t component_to_world = 0x250;			// world > persistent_level > aactor > mesh > component_to_world
-	uint64_t bone_array = 0x5B0;				// world > persistent_level > aactor > mesh > bone_array
-	uint64_t bone_count = 0x5B8;				// world > persistent_level > aactor > mesh > bone_array + (index * bone_count)
+	uint64_t bone_array = 0x5C0;				// world > persistent_level > aactor > mesh > bone_array
+	uint64_t bone_count = 0x5C8;				// world > persistent_level > aactor > mesh > bone_array + (index * bone_count)
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hamsterious#9963
