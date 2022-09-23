@@ -1,12 +1,13 @@
-namespace offsets {
+namespace sex {
 	// global
-	uint64_t uworld_key = 0x8F24238; 
-	uint64_t uworld_state = 0x8F24200;
-	uint64_t g_object_state = 0x8D92580;
-	uint64_t g_object_key = 0x8D925B8;
-	uint64_t line_of_sight = 0x4977040;
-	uint64_t bone_matrix = 0x493D160;
-	uint64_t pakman_offset = 0x1B84120;                 
+	uint64_t uworld_key = 0x90217F8; 
+	uint64_t uworld_state = 0x90217C0;
+	uint64_t g_object_state = 0x8E8FB00;
+	uint64_t g_object_key = 0x8E8FB38;
+	uint64_t line_of_sight = 0x2A0C680;
+	uint64_t bone_matrix = 0x49F14C0;
+	
+	uint64_t pakman_offset = 0x1C1C4B0;                     // deref_pointer_in_game_space_fn - https://www.unknowncheats.me/forum/valorant/503616-dumping-valorant-perfect-results-easy.html
 	
 	// world
 	uint64_t persistent_level = 0x38;			// world > persistent_level
@@ -51,28 +52,6 @@ namespace offsets {
 	uint64_t component_to_world = 0x250;			// world > persistent_level > aactor > mesh > component_to_world
 	uint64_t bone_array = 0x5C0;				// world > persistent_level > aactor > mesh > bone_array
 	uint64_t bone_count = 0x5C8;				// world > persistent_level > aactor > mesh > bone_array + (index * bone_count)
+	uint64_t last_submit_time = 0x378;			// world > persistent_level > aactor -> mesh -> last_submit_time
+	uint64_t last_render_time = 0x37C;			// world > persistent_level > aactor -> mesh -> last_render_time
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Hamsterious#9963
